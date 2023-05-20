@@ -5,6 +5,11 @@ Simple Container Image with Linux and Some Tools
 I found issues with mount using a default snap distribution in Ubuntu. 
 * Recommend following instructions on https://docs.docker.com/get-docker/ for desktop, ce, and standard distributions.
 
+## Standard Build
+Performing the standard build is as follows:
+
+1. docker build -t stuartwfraser/sandbox:ubuntu_16.04 --file Dockerfile .
+
 ## Example Usage
 Following is an example use:
 
