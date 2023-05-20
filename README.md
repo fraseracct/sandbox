@@ -15,7 +15,7 @@ Performing custom builds is as follows:
 
 1. Download the project
 2. Edit Dockerfile as desired
-  * Example: FROM ubuntu:22.04
+    * Example: FROM ubuntu:22.04
 3. docker build -t myimages/ubuntu:22.04 --file Dockerfile .
 
 docker build -t myimages/ubuntu:22.04 --file Dockerfile .
