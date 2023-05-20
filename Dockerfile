@@ -12,6 +12,7 @@ RUN apt-get update \
   supervisor \
   && rm -rf /var/lib/apt/lists/*
 RUN mkdir -p /opt/axway
-COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-CMD /usr/bin/python /usr/bin/supervisord -c /opt/axway/supervisord.conf
+COPY supervisord.conf /etc/supervisord/sandboxbasic.conf
+ENV SUPERVISORCONF /etc/supervisord/sandboxbasic.conf
+CMD /usr/bin/python /usr/bin/supervisord -c $SUPERVISORCONF
 EXPOSE 9001
