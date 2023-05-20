@@ -22,7 +22,7 @@ Following is an example use:
 6. docker exec -it projecta bash
     * Perform some work. (It is suggested you use the mounted file system **/opt/projecta**.)
 
-## Custom Builds
+## Custom Image Builds
 Performing custom builds is as follows:
 
 1. Download the project
@@ -30,10 +30,3 @@ Performing custom builds is as follows:
     * **Example:** FROM ubuntu:22.04
 3. docker build -t myimages/ubuntu:22.04 --file Dockerfile .
 
-docker build -t myimages/ubuntu:22.04 --file Dockerfile .
-
-mkdir -p /opt/projects/projecta
-
-https://docs.docker.com/engine/install/ubuntu/
-
-docker build -t sandbox/ubuntu:16.04 --file Dockerfile .
