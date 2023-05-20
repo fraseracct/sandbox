@@ -1,9 +1,9 @@
 # SANDBOX
 Simple Container Image with Linux and Some Tools
 
-## If using Docker, I do not recommend snap docker distribution
+## WARNING: I do not recommend snap docker distribution
 I found issues with mount using a default snap distribution in Ubuntu. 
-* Recommend following instructions on https://docs.docker.com/get-docker/ for desktop, ce, and standard distributions.
+* Recommend following instructions on https://docs.docker.com/get-docker/ for desktop, ce, or standard distribution.
 
 ## Standard Build
 Performing the standard build is as follows:
