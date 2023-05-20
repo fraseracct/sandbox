@@ -13,7 +13,12 @@ Performing the standard build is as follows:
 ## Example Usage
 Following is an example use:
 
-1. docker run
+1. [Suggestion] Create a local folder for performing your work
+    * mkdir -p /opt/projects/projecta **Example:** FROM ubuntu:22.04
+2. docker run -d -it -p 9001:9001 --name projecta --hostname projecta **--mount type=bind,source=/opt/projects/projecta,target=/opt/projecta** stuartwfraser/sandbox:ubuntu_16.04
+3. Open http://<your_computer>:9001
+4. Press 'Start' for the os-release (process)
+5. Press the 'os-relase' name to see the output of the operating system release version
 
 ## Custom Builds
 Performing custom builds is as follows:
