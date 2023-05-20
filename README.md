@@ -20,7 +20,7 @@ Following is an example use:
 4. Press 'Start' for the os-release (process)
 5. Press the 'os-relase' name to see the output of the operating system release version
 6. docker exec -it projecta bash
-    * <Perform some work. Suggestion, use the mounted file system **/opt/projecta**.>
+    * Perform some work. (It is suggested you use the mounted file system **/opt/projecta**.)
 
 ## Custom Builds
 Performing custom builds is as follows:
