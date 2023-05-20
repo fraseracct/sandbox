@@ -22,6 +22,10 @@ Following is an example use:
 6. docker exec -it projecta bash
     * Perform some work. (It is suggested you use the mounted file system **/opt/projecta**.)
 
+## Custom Supervisor Configuration
+1. docker run -d -it -p 9001:9001 --name projecta --hostname projecta --mount type=bind,source=/opt/projects/projecta,target=/opt/projecta **-e SUPERVISORCONF=/opt/projecta/mysupervisord.conf** stuartwfraser/sandbox:ubuntu_16.04
+SUPERVISORCONF
+
 ## Custom Image Builds
 Performing custom builds is as follows:
 
